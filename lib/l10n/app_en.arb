@@ -1,0 +1,17 @@
+{
+  "textName": "Name",
+  "textNameHint": "Your name",
+  "textFrom": "From",
+  "textFromHint": "your@email.com",
+  "textSubject": "Subject",
+  "textSubjectHint": "Subject",
+  "textWriteYourMessageHint": "Write your message...",
+  "textSend": "Send",
+  "textSentWithIcon": "Sent ✓",
+  "textFinder": "Finder",
+  "textEmail": "Email",
+  "textNotes": "Notes",
+  "textMusic": "Music",
+  "textPhotos": "Photos",
+  "textSpotlight": "Spotlight"
+}

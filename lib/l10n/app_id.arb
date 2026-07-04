@@ -1,0 +1,17 @@
+{
+  "textName": "Nama",
+  "textNameHint": "Nama anda",
+  "textFrom": "Dari",
+  "textFromHint": "anda@email.com",
+  "textSubject": "Subjek",
+  "textSubjectHint": "Subjek",
+  "textWriteYourMessageHint": "Tulis pesan anda...",
+  "textSend": "Kirim",
+  "textSentWithIcon": "Terkirim ✓",
+  "textFinder": "Temuan",
+  "textEmail": "Email",
+  "textNotes": "Catatan",
+  "textMusic": "Musik",
+  "textPhotos": "Foto",
+  "textSpotlight": "Sorotan"
+}
