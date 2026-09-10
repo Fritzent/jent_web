@@ -12,4 +12,12 @@ class AppColors {
 
   static const Color headerMenuGradientStart = Color(0xFF3C4646);
   static const Color headerMenuGradientEnd = Color(0xFF2C3536);
+
+  static const Color sendButtonEnabled = Color(0xFF1E88E5);
+  static const Color sendButtonDisabled = Color(0xFFBDBDBD);
+
+  static const Color musicPlayerBackground = Color(0xFF0F1823);
+  static const Color musicPlayerPanel = Color(0xFF141E2C);
+  static const Color musicPlayerAccent = Color(0xFF22D3A5);
+  static const Color musicPlayerVinylHole = Color(0xFFF4F1EA);
 }

@@ -33,6 +33,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get textSend => 'Send';
 
   @override
+  String get textSendError => 'Failed to send, try again';
+
+  @override
   String get textSentWithIcon => 'Sent ✓';
 
   @override
@@ -52,4 +55,34 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get textSpotlight => 'Spotlight';
+
+  @override
+  String get menuFile => 'File';
+
+  @override
+  String get menuEdit => 'Edit';
+
+  @override
+  String get menuView => 'View';
+
+  @override
+  String get welcomeMessage => 'Welcome';
+
+  @override
+  String get dialogDeny => 'Deny';
+
+  @override
+  String get dialogAllow => 'Allow';
+
+  @override
+  String get musicNowPlaying => 'Now playing';
+
+  @override
+  String get musicPaused => 'Paused';
+
+  @override
+  String get musicYourPlaylist => 'Your playlist';
+
+  @override
+  String get musicUnknownArtist => 'Unknown artist';
 }

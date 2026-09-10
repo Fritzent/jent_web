@@ -7,11 +7,22 @@
   "textSubjectHint": "Subject",
   "textWriteYourMessageHint": "Write your message...",
   "textSend": "Send",
+  "textSendError": "Failed to send, try again",
   "textSentWithIcon": "Sent ✓",
   "textFinder": "Finder",
   "textEmail": "Email",
   "textNotes": "Notes",
   "textMusic": "Music",
   "textPhotos": "Photos",
-  "textSpotlight": "Spotlight"
+  "textSpotlight": "Spotlight",
+  "menuFile": "File",
+  "menuEdit": "Edit",
+  "menuView": "View",
+  "welcomeMessage": "Welcome",
+  "dialogDeny": "Deny",
+  "dialogAllow": "Allow",
+  "musicNowPlaying": "Now playing",
+  "musicPaused": "Paused",
+  "musicYourPlaylist": "Your playlist",
+  "musicUnknownArtist": "Unknown artist"
 }

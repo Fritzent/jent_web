@@ -11,9 +11,7 @@
 
 import 'package:flutter/widgets.dart';
 
-class Assets {
-  const Assets._();
-
+abstract final class Assets {
   static const AssetGenImage icEmail = AssetGenImage('assets/ic_email.png');
   static const AssetGenImage icFinder = AssetGenImage('assets/ic_finder.png');
   static const AssetGenImage icJustLogo = AssetGenImage(

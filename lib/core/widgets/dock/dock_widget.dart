@@ -1,6 +1,6 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:jent_web/source/widget/dock/dock_icon_widget.dart';
+import 'package:jent_web/core/widgets/dock/dock_icon_widget.dart';
 
 class DockWidget extends StatefulWidget {
   final List<Widget> icons;
@@ -130,15 +130,7 @@ class _DockWidgetState extends State<DockWidget> {
                                 -(_scaleFor(index) - 1) * 0.05,
                               ),
                               child: GestureDetector(
-                                onTap: () {
-                                  if (index == 0) {
-                                    widget.onIconTapped(index);
-                                  } else if (index == 1) {
-                                    widget.onIconTapped(index);
-                                  } else if (index == 2) {
-                                    widget.onIconTapped(index);
-                                  }
-                                },
+                                onTap: () => widget.onIconTapped(index),
                                 child: Container(
                                   key: _iconKeys[index],
                                   child: Column(

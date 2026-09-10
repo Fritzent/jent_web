@@ -1,6 +1,6 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
-import 'package:jent_web/source/colors.dart';
+import 'package:jent_web/core/theme/app_colors.dart';
 
 class WaterFillLogo extends StatefulWidget {
   final double progress;

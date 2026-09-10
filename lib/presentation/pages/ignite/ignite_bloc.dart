@@ -1,9 +1,11 @@
 import 'dart:async';
 
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:injectable/injectable.dart';
 import 'ignite_event.dart';
 import 'ignite_state.dart';
 
+@injectable
 class IgniteBloc extends Bloc<IgniteEvent, IgniteState> {
   Timer? _timer;
   double _progress = 0.0;

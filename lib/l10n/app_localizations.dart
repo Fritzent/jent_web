@@ -146,6 +146,12 @@ abstract class AppLocalizations {
   /// **'Kirim'**
   String get textSend;
 
+  /// No description provided for @textSendError.
+  ///
+  /// In id, this message translates to:
+  /// **'Gagal mengirim, coba lagi'**
+  String get textSendError;
+
   /// No description provided for @textSentWithIcon.
   ///
   /// In id, this message translates to:
@@ -187,6 +193,66 @@ abstract class AppLocalizations {
   /// In id, this message translates to:
   /// **'Sorotan'**
   String get textSpotlight;
+
+  /// No description provided for @menuFile.
+  ///
+  /// In id, this message translates to:
+  /// **'Berkas'**
+  String get menuFile;
+
+  /// No description provided for @menuEdit.
+  ///
+  /// In id, this message translates to:
+  /// **'Ubah'**
+  String get menuEdit;
+
+  /// No description provided for @menuView.
+  ///
+  /// In id, this message translates to:
+  /// **'Lihat'**
+  String get menuView;
+
+  /// No description provided for @welcomeMessage.
+  ///
+  /// In id, this message translates to:
+  /// **'Selamat datang'**
+  String get welcomeMessage;
+
+  /// No description provided for @dialogDeny.
+  ///
+  /// In id, this message translates to:
+  /// **'Tolak'**
+  String get dialogDeny;
+
+  /// No description provided for @dialogAllow.
+  ///
+  /// In id, this message translates to:
+  /// **'Izinkan'**
+  String get dialogAllow;
+
+  /// No description provided for @musicNowPlaying.
+  ///
+  /// In id, this message translates to:
+  /// **'Sedang diputar'**
+  String get musicNowPlaying;
+
+  /// No description provided for @musicPaused.
+  ///
+  /// In id, this message translates to:
+  /// **'Dijeda'**
+  String get musicPaused;
+
+  /// No description provided for @musicYourPlaylist.
+  ///
+  /// In id, this message translates to:
+  /// **'Playlist kamu'**
+  String get musicYourPlaylist;
+
+  /// No description provided for @musicUnknownArtist.
+  ///
+  /// In id, this message translates to:
+  /// **'Artis tidak dikenal'**
+  String get musicUnknownArtist;
 }
 
 class _AppLocalizationsDelegate

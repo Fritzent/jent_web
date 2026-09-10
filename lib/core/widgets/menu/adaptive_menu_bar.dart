@@ -1,6 +1,7 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:jent_web/gen/assets.gen.dart';
+import 'package:jent_web/l10n/app_localizations.dart';
 
 class AdaptiveMenuBar extends StatefulWidget {
   final ImageProvider backgroundImage;
@@ -94,9 +95,8 @@ class _AdaptiveMenuBarState extends State<AdaptiveMenuBar> {
 
   @override
   Widget build(BuildContext context) {
-    final textColor = _isDark
-        ? Colors.white
-        : Colors.black87;
+    final textColor = _isDark ? Colors.white : Colors.black87;
+    final strings = AppLocalizations.of(context)!;
 
     return ClipRect(
       child: BackdropFilter(
@@ -126,11 +126,11 @@ class _AdaptiveMenuBarState extends State<AdaptiveMenuBar> {
                 ),
               ),
               const SizedBox(width: 24),
-              Text('File', style: TextStyle(color: textColor)),
+              Text(strings.menuFile, style: TextStyle(color: textColor)),
               const SizedBox(width: 24),
-              Text('Edit', style: TextStyle(color: textColor)),
+              Text(strings.menuEdit, style: TextStyle(color: textColor)),
               const SizedBox(width: 24),
-              Text('View', style: TextStyle(color: textColor)),
+              Text(strings.menuView, style: TextStyle(color: textColor)),
             ],
           ),
         ),

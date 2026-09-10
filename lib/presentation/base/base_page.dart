@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:jent_web/l10n/app_localizations.dart';
 
 abstract class BasePage extends StatefulWidget {
   const BasePage({super.key});
@@ -44,6 +45,7 @@ abstract class BasePageState<T extends BasePage> extends State<T> {
     required String title,
     required String message,
   }) async {
+    final strings = AppLocalizations.of(context)!;
     final result = await showDialog<bool>(
       context: context,
       builder: (_) => AlertDialog(
@@ -52,11 +54,11 @@ abstract class BasePageState<T extends BasePage> extends State<T> {
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context, false),
-            child: const Text('Deny'),
+            child: Text(strings.dialogDeny),
           ),
           ElevatedButton(
             onPressed: () => Navigator.pop(context, true),
-            child: const Text('Allow'),
+            child: Text(strings.dialogAllow),
           ),
         ],
       ),

@@ -7,11 +7,22 @@
   "textSubjectHint": "Subjek",
   "textWriteYourMessageHint": "Tulis pesan anda...",
   "textSend": "Kirim",
+  "textSendError": "Gagal mengirim, coba lagi",
   "textSentWithIcon": "Terkirim ✓",
   "textFinder": "Temuan",
   "textEmail": "Email",
   "textNotes": "Catatan",
   "textMusic": "Musik",
   "textPhotos": "Foto",
-  "textSpotlight": "Sorotan"
+  "textSpotlight": "Sorotan",
+  "menuFile": "Berkas",
+  "menuEdit": "Ubah",
+  "menuView": "Lihat",
+  "welcomeMessage": "Selamat datang",
+  "dialogDeny": "Tolak",
+  "dialogAllow": "Izinkan",
+  "musicNowPlaying": "Sedang diputar",
+  "musicPaused": "Dijeda",
+  "musicYourPlaylist": "Playlist kamu",
+  "musicUnknownArtist": "Artis tidak dikenal"
 }

@@ -1,6 +1,6 @@
 import 'package:go_router/go_router.dart';
 import 'package:jent_web/presentation/pages/home/home_page.dart';
-import 'package:jent_web/presentation/pages/ignition/ignite_page.dart';
+import 'package:jent_web/presentation/pages/ignite/ignite_page.dart';
 import 'package:jent_web/router/app_path.dart';
 import 'package:flutter/material.dart';
 

@@ -33,6 +33,9 @@ class AppLocalizationsId extends AppLocalizations {
   String get textSend => 'Kirim';
 
   @override
+  String get textSendError => 'Gagal mengirim, coba lagi';
+
+  @override
   String get textSentWithIcon => 'Terkirim ✓';
 
   @override
@@ -52,4 +55,34 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get textSpotlight => 'Sorotan';
+
+  @override
+  String get menuFile => 'Berkas';
+
+  @override
+  String get menuEdit => 'Ubah';
+
+  @override
+  String get menuView => 'Lihat';
+
+  @override
+  String get welcomeMessage => 'Selamat datang';
+
+  @override
+  String get dialogDeny => 'Tolak';
+
+  @override
+  String get dialogAllow => 'Izinkan';
+
+  @override
+  String get musicNowPlaying => 'Sedang diputar';
+
+  @override
+  String get musicPaused => 'Dijeda';
+
+  @override
+  String get musicYourPlaylist => 'Playlist kamu';
+
+  @override
+  String get musicUnknownArtist => 'Artis tidak dikenal';
 }
