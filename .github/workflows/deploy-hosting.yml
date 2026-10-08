@@ -48,14 +48,14 @@ jobs:
           curl -sS -H "Content-Type: application/json" -d "{
             \"embeds\": [{
               \"title\": \"✅ Hosting deployed — me-jent\",
-              \"url\": \"https://me-jent.web.app\",
+              \"url\": \"jentweb.web.app",
               \"color\": 5763719,
               \"description\": \"A new version is live on Firebase Hosting.\",
               \"fields\": [
-                {\"name\": \"Site\", \"value\": \"https://me-jent.web.app\", \"inline\": false},
+                {\"name\": \"Site\", \"value\": \"jentweb.web.app\", \"inline\": false},
                 {\"name\": \"Commit\", \"value\": \"${GITHUB_SHA::7} by ${GITHUB_ACTOR}\", \"inline\": true},
                 {\"name\": \"Branch\", \"value\": \"${GITHUB_REF_NAME}\", \"inline\": true},
-                {\"name\": \"Console\", \"value\": \"https://console.firebase.google.com/project/me-jent/hosting\", \"inline\": false}
+                {\"name\": \"Console\", \"value\": \"https://console.firebase.google.com/project/jentweb/hosting\", \"inline\": false}
               ],
               \"timestamp\": \"$(date -u +%Y-%m-%dT%H:%M:%SZ)\"
             }]
