@@ -23,7 +23,15 @@ class _WindowDragAreaState extends State<WindowDragArea> {
         onPanUpdate: widget.onPanUpdate,
         onPanEnd: (_) => setState(() => _dragging = false),
         onPanCancel: () => setState(() => _dragging = false),
-        child: Container(color: Colors.transparent),
+        // Fill the bar height: a bare Container with no child
+        // collapses to zero height and leaves only a pixel line
+        // as the drag handle. Both usages sit in fixed-height
+        // strips, so expanding here is safe.
+        child: Container(
+          color: Colors.transparent,
+          width: double.infinity,
+          height: double.infinity,
+        ),
       ),
     );
   }

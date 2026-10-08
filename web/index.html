@@ -34,7 +34,13 @@
 
 </head>
 <body>
-
+  <script>
+    window.SpotifyPlayerLoaded = false;
+    window.onSpotifyWebPlaybackSDKReady = function () {
+      window.SpotifyPlayerLoaded = true;
+    };
+  </script>
+  <script src="https://sdk.scdn.co/spotify-player.js" async></script>
   <script src="flutter_bootstrap.js" async></script>
 </body>
 </html>

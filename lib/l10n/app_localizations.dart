@@ -253,6 +253,156 @@ abstract class AppLocalizations {
   /// In id, this message translates to:
   /// **'Artis tidak dikenal'**
   String get musicUnknownArtist;
+
+  /// No description provided for @musicSearchHint.
+  ///
+  /// In id, this message translates to:
+  /// **'Cari lagu di Spotify'**
+  String get musicSearchHint;
+
+  /// No description provided for @musicNoResults.
+  ///
+  /// In id, this message translates to:
+  /// **'Lagu tidak ditemukan, coba kata lain'**
+  String get musicNoResults;
+
+  /// No description provided for @musicConnecting.
+  ///
+  /// In id, this message translates to:
+  /// **'Menghubungkan ke Spotify…'**
+  String get musicConnecting;
+
+  /// No description provided for @musicConnectError.
+  ///
+  /// In id, this message translates to:
+  /// **'Spotify tidak tersedia, mode luring'**
+  String get musicConnectError;
+
+  /// No description provided for @musicOfflineMode.
+  ///
+  /// In id, this message translates to:
+  /// **'Mode luring'**
+  String get musicOfflineMode;
+
+  /// No description provided for @musicOfflinePlaylist.
+  ///
+  /// In id, this message translates to:
+  /// **'Playlist luring'**
+  String get musicOfflinePlaylist;
+
+  /// No description provided for @musicErrorTitle.
+  ///
+  /// In id, this message translates to:
+  /// **'Koneksi Spotify gagal'**
+  String get musicErrorTitle;
+
+  /// No description provided for @musicRetry.
+  ///
+  /// In id, this message translates to:
+  /// **'Coba lagi'**
+  String get musicRetry;
+
+  /// No description provided for @musicTapDetails.
+  ///
+  /// In id, this message translates to:
+  /// **'ketuk untuk detail'**
+  String get musicTapDetails;
+
+  /// No description provided for @dialogClose.
+  ///
+  /// In id, this message translates to:
+  /// **'Tutup'**
+  String get dialogClose;
+
+  /// No description provided for @photosBackToGallery.
+  ///
+  /// In id, this message translates to:
+  /// **'Kembali ke galeri'**
+  String get photosBackToGallery;
+
+  /// No description provided for @photosPinTitle.
+  ///
+  /// In id, this message translates to:
+  /// **'Masukkan PIN untuk membuka Foto'**
+  String get photosPinTitle;
+
+  /// No description provided for @photosPinUnlock.
+  ///
+  /// In id, this message translates to:
+  /// **'Buka'**
+  String get photosPinUnlock;
+
+  /// No description provided for @photosPinCancel.
+  ///
+  /// In id, this message translates to:
+  /// **'Batal'**
+  String get photosPinCancel;
+
+  /// No description provided for @photosPinHint.
+  ///
+  /// In id, this message translates to:
+  /// **'PIN 4 digit'**
+  String get photosPinHint;
+
+  /// No description provided for @photosAccessDenied.
+  ///
+  /// In id, this message translates to:
+  /// **'Anda tidak punya akses untuk melihat foto'**
+  String get photosAccessDenied;
+
+  /// No description provided for @photosViewGeneral.
+  ///
+  /// In id, this message translates to:
+  /// **'Lihat foto umum'**
+  String get photosViewGeneral;
+
+  /// No description provided for @notesFolders.
+  ///
+  /// In id, this message translates to:
+  /// **'Folder'**
+  String get notesFolders;
+
+  /// No description provided for @notesSearchHint.
+  ///
+  /// In id, this message translates to:
+  /// **'Cari'**
+  String get notesSearchHint;
+
+  /// No description provided for @notesNewNote.
+  ///
+  /// In id, this message translates to:
+  /// **'Catatan Baru'**
+  String get notesNewNote;
+
+  /// No description provided for @notesDeleteNote.
+  ///
+  /// In id, this message translates to:
+  /// **'Hapus Catatan'**
+  String get notesDeleteNote;
+
+  /// No description provided for @notesEmpty.
+  ///
+  /// In id, this message translates to:
+  /// **'Tidak Ada Catatan'**
+  String get notesEmpty;
+
+  /// No description provided for @notesPinTitle.
+  ///
+  /// In id, this message translates to:
+  /// **'Masukkan PIN untuk membuka Catatan'**
+  String get notesPinTitle;
+
+  /// No description provided for @notesAccessDenied.
+  ///
+  /// In id, this message translates to:
+  /// **'Anda tidak punya akses untuk melihat catatan'**
+  String get notesAccessDenied;
+
+  /// No description provided for @notesViewGeneral.
+  ///
+  /// In id, this message translates to:
+  /// **'Lihat catatan umum'**
+  String get notesViewGeneral;
 }
 
 class _AppLocalizationsDelegate

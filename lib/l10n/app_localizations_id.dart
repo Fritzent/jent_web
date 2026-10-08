@@ -85,4 +85,80 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get musicUnknownArtist => 'Artis tidak dikenal';
+
+  @override
+  String get musicSearchHint => 'Cari lagu di Spotify';
+
+  @override
+  String get musicNoResults => 'Lagu tidak ditemukan, coba kata lain';
+
+  @override
+  String get musicConnecting => 'Menghubungkan ke Spotify…';
+
+  @override
+  String get musicConnectError => 'Spotify tidak tersedia, mode luring';
+
+  @override
+  String get musicOfflineMode => 'Mode luring';
+
+  @override
+  String get musicOfflinePlaylist => 'Playlist luring';
+
+  @override
+  String get musicErrorTitle => 'Koneksi Spotify gagal';
+
+  @override
+  String get musicRetry => 'Coba lagi';
+
+  @override
+  String get musicTapDetails => 'ketuk untuk detail';
+
+  @override
+  String get dialogClose => 'Tutup';
+
+  @override
+  String get photosBackToGallery => 'Kembali ke galeri';
+
+  @override
+  String get photosPinTitle => 'Masukkan PIN untuk membuka Foto';
+
+  @override
+  String get photosPinUnlock => 'Buka';
+
+  @override
+  String get photosPinCancel => 'Batal';
+
+  @override
+  String get photosPinHint => 'PIN 4 digit';
+
+  @override
+  String get photosAccessDenied => 'Anda tidak punya akses untuk melihat foto';
+
+  @override
+  String get photosViewGeneral => 'Lihat foto umum';
+
+  @override
+  String get notesFolders => 'Folder';
+
+  @override
+  String get notesSearchHint => 'Cari';
+
+  @override
+  String get notesNewNote => 'Catatan Baru';
+
+  @override
+  String get notesDeleteNote => 'Hapus Catatan';
+
+  @override
+  String get notesEmpty => 'Tidak Ada Catatan';
+
+  @override
+  String get notesPinTitle => 'Masukkan PIN untuk membuka Catatan';
+
+  @override
+  String get notesAccessDenied =>
+      'Anda tidak punya akses untuk melihat catatan';
+
+  @override
+  String get notesViewGeneral => 'Lihat catatan umum';
 }

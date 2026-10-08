@@ -85,4 +85,79 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get musicUnknownArtist => 'Unknown artist';
+
+  @override
+  String get musicSearchHint => 'Search songs on Spotify';
+
+  @override
+  String get musicNoResults => 'No songs found, try another search';
+
+  @override
+  String get musicConnecting => 'Connecting to Spotify…';
+
+  @override
+  String get musicConnectError => 'Spotify unavailable, playing offline';
+
+  @override
+  String get musicOfflineMode => 'Offline mode';
+
+  @override
+  String get musicOfflinePlaylist => 'Offline playlist';
+
+  @override
+  String get musicErrorTitle => 'Spotify connection failed';
+
+  @override
+  String get musicRetry => 'Retry';
+
+  @override
+  String get musicTapDetails => 'tap for details';
+
+  @override
+  String get dialogClose => 'Close';
+
+  @override
+  String get photosBackToGallery => 'Back to gallery';
+
+  @override
+  String get photosPinTitle => 'Enter PIN to open Photos';
+
+  @override
+  String get photosPinUnlock => 'Unlock';
+
+  @override
+  String get photosPinCancel => 'Cancel';
+
+  @override
+  String get photosPinHint => '4-digit PIN';
+
+  @override
+  String get photosAccessDenied => 'You don\'t have access to see the photos';
+
+  @override
+  String get photosViewGeneral => 'View general photos';
+
+  @override
+  String get notesFolders => 'Folders';
+
+  @override
+  String get notesSearchHint => 'Search';
+
+  @override
+  String get notesNewNote => 'New Note';
+
+  @override
+  String get notesDeleteNote => 'Delete Note';
+
+  @override
+  String get notesEmpty => 'No Notes';
+
+  @override
+  String get notesPinTitle => 'Enter PIN to open Notes';
+
+  @override
+  String get notesAccessDenied => 'You don\'t have access to see the notes';
+
+  @override
+  String get notesViewGeneral => 'View general notes';
 }

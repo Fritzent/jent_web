@@ -53,6 +53,22 @@ class AppDimens {
   static const double musicExpandedWidth = 460.0;
   static const double musicExpandedPlaylistHeight = 168.0;
 
+  // Photos window.
+  static const double photosWindowWidth = 560.0;
+  static const double photosWindowHeight = 420.0;
+  static const double photosExpandedWidth = 780.0;
+  static const double photosExpandedHeight = 560.0;
+  static const double photosGridSpacing = 8.0;
+  static const double photosThumbRadius = 8.0;
+
+  // Notes window.
+  static const double notesWindowWidth = 720.0;
+  static const double notesWindowHeight = 480.0;
+  static const double notesExpandedWidth = 940.0;
+  static const double notesExpandedHeight = 620.0;
+  static const double notesMinWidth = 480.0;
+  static const double notesMinHeight = 340.0;
+
   static Size mailWindowSize(Size screenSize, bool expanded) {
     if (expanded) {
       return Size(

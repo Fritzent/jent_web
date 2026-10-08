@@ -11,6 +11,61 @@
 
 import 'package:flutter/widgets.dart';
 
+class $AssetsPhotosGeneralGen {
+  const $AssetsPhotosGeneralGen();
+
+  /// File path: assets/photos_general/README.md
+  String get readme => 'assets/photos_general/README.md';
+
+  /// File path: assets/photos_general/il_home_1.jpg
+  AssetGenImage get ilHome1 =>
+      const AssetGenImage('assets/photos_general/il_home_1.jpg');
+
+  /// File path: assets/photos_general/il_home_2.jpg
+  AssetGenImage get ilHome2 =>
+      const AssetGenImage('assets/photos_general/il_home_2.jpg');
+
+  /// List of all assets
+  List<dynamic> get values => [readme, ilHome1, ilHome2];
+}
+
+class $AssetsPhotosPrivateGen {
+  const $AssetsPhotosPrivateGen();
+
+  /// File path: assets/photos_private/README.md
+  String get readme => 'assets/photos_private/README.md';
+
+  /// File path: assets/photos_private/il_home_1.jpg
+  AssetGenImage get ilHome1 =>
+      const AssetGenImage('assets/photos_private/il_home_1.jpg');
+
+  /// File path: assets/photos_private/il_home_2.jpg
+  AssetGenImage get ilHome2 =>
+      const AssetGenImage('assets/photos_private/il_home_2.jpg');
+
+  /// File path: assets/photos_private/il_home_3.jpg
+  AssetGenImage get ilHome3 =>
+      const AssetGenImage('assets/photos_private/il_home_3.jpg');
+
+  /// File path: assets/photos_private/il_home_4.jpg
+  AssetGenImage get ilHome4 =>
+      const AssetGenImage('assets/photos_private/il_home_4.jpg');
+
+  /// File path: assets/photos_private/il_home_5.jpg
+  AssetGenImage get ilHome5 =>
+      const AssetGenImage('assets/photos_private/il_home_5.jpg');
+
+  /// List of all assets
+  List<dynamic> get values => [
+    readme,
+    ilHome1,
+    ilHome2,
+    ilHome3,
+    ilHome4,
+    ilHome5,
+  ];
+}
+
 abstract final class Assets {
   static const AssetGenImage icEmail = AssetGenImage('assets/ic_email.png');
   static const AssetGenImage icFinder = AssetGenImage('assets/ic_finder.png');
@@ -33,6 +88,10 @@ abstract final class Assets {
   static const AssetGenImage ilHome3 = AssetGenImage('assets/il_home_3.jpg');
   static const AssetGenImage ilHome4 = AssetGenImage('assets/il_home_4.jpg');
   static const AssetGenImage ilHome5 = AssetGenImage('assets/il_home_5.jpg');
+  static const $AssetsPhotosGeneralGen photosGeneral =
+      $AssetsPhotosGeneralGen();
+  static const $AssetsPhotosPrivateGen photosPrivate =
+      $AssetsPhotosPrivateGen();
 
   /// List of all assets
   static List<AssetGenImage> get values => [

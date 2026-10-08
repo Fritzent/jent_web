@@ -1,0 +1,85 @@
+name: Deploy Hosting + Notify Discord
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build-deploy-notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          flutter-version: "3.44.8"
+
+      - name: Install dependencies
+        run: flutter pub get
+
+      - name: Build web
+        # The contact form sends mail via Web3Forms on web. Add the secret
+        # WEB3FORMS_KEY (get one free at https://web3forms.com) and extend
+        # this to:
+        # flutter build web --release --base-href / --dart-define=WEB3FORMS_KEY=${{ secrets.WEB3FORMS_KEY }}
+        run: flutter build web --release --base-href /
+
+      - name: Deploy to Firebase Hosting
+        run: |
+          npm install -g firebase-tools
+          echo '${{ secrets.FIREBASE_SERVICE_ACCOUNT_ME_JENT }}' > "$RUNNER_TEMP/sa.json"
+          export GOOGLE_APPLICATION_CREDENTIALS="$RUNNER_TEMP/sa.json"
+          firebase deploy --only hosting --project me-jent --non-interactive
+
+      - name: Notify Discord — success
+        if: success()
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: |
+          if [ -z "$DISCORD_WEBHOOK_URL" ]; then
+            echo "DISCORD_WEBHOOK_URL not set — skipping notification."
+            exit 0
+          fi
+          curl -sS -H "Content-Type: application/json" -d "{
+            \"embeds\": [{
+              \"title\": \"✅ Hosting deployed — me-jent\",
+              \"url\": \"https://me-jent.web.app\",
+              \"color\": 5763719,
+              \"description\": \"A new version is live on Firebase Hosting.\",
+              \"fields\": [
+                {\"name\": \"Site\", \"value\": \"https://me-jent.web.app\", \"inline\": false},
+                {\"name\": \"Commit\", \"value\": \"${GITHUB_SHA::7} by ${GITHUB_ACTOR}\", \"inline\": true},
+                {\"name\": \"Branch\", \"value\": \"${GITHUB_REF_NAME}\", \"inline\": true},
+                {\"name\": \"Console\", \"value\": \"https://console.firebase.google.com/project/me-jent/hosting\", \"inline\": false}
+              ],
+              \"timestamp\": \"$(date -u +%Y-%m-%dT%H:%M:%SZ)\"
+            }]
+          }" "$DISCORD_WEBHOOK_URL"
+
+      - name: Notify Discord — failure
+        if: failure()
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: |
+          if [ -z "$DISCORD_WEBHOOK_URL" ]; then
+            echo "DISCORD_WEBHOOK_URL not set — skipping notification."
+            exit 0
+          fi
+          curl -sS -H "Content-Type: application/json" -d "{
+            \"embeds\": [{
+              \"title\": \"❌ Hosting deploy FAILED — me-jent\",
+              \"url\": \"https://github.com/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}\",
+              \"color\": 15548997,
+              \"description\": \"The build or deploy step failed. Check the Actions run.\",
+              \"fields\": [
+                {\"name\": \"Commit\", \"value\": \"${GITHUB_SHA::7} by ${GITHUB_ACTOR}\", \"inline\": true},
+                {\"name\": \"Branch\", \"value\": \"${GITHUB_REF_NAME}\", \"inline\": true},
+                {\"name\": \"Run\", \"value\": \"https://github.com/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}\", \"inline\": false}
+              ],
+              \"timestamp\": \"$(date -u +%Y-%m-%dT%H:%M:%SZ)\"
+            }]
+          }" "$DISCORD_WEBHOOK_URL"
